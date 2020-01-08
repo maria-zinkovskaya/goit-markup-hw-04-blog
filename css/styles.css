@@ -89,6 +89,27 @@ html {
   color: #626262;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
+  margin-top: 0;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature-list-item {
+  flex-basis: calc(50% - 30px);
+  margin-right: 60px;
+  flex-grow: 0;
+  margin-bottom: 130px;
+}
+
+.feature-list-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.feature-list-item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
 }
 
 .hero .button {
@@ -97,4 +118,16 @@ html {
   color: #626262;
   font-family: 'Playfair Display';
   font-weight: 400;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border: thin solid #626262;
+  margin-bottom: 57px;
+  margin-top: 57px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  padding: 21px 35px;
 }
